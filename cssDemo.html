@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/css/demo3.css">
+  <title>ligrace21</title>
+</head>
+
+<body>
+  <div id="preloader_bg">
+    <div class="yellow_butterfly butterfly"></div>
+    <div class="blue_butterfly butterfly"></div>
+    <div>      
+      <img src="/images/demo3/garden.png" class="garden_logo"/>
+    </div>
+  </div>
+
+<div id="content">
+  <div class="section" id="section1" style="background-color: white;">
+    <video autoplay muted loop id="airplane">
+      <source src="/videos/travel_final3_small.mp4" type="video/mp4" media="all and (max-width: 1200px)">
+      <source src="/videos/travel_final3.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="nav">
+      <div class="topnav">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a>Solutions</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bn_nav">
+        <button type="button" id="menu_bn">
+          <img class="logo_svg" src="/images/demo3/logo_doc.svg" alt="menu">
+        </button>
+        <button type="button" id="book_trip_bn">
+          <img class="logo_svg" src="/images/demo3/logo_plane.svg" alt="book a trip">
+        </button>
+      </div>
+    </div>
+
+    <div class="logo">
+      Traveller
+    </div>
+
+    <div class="section1_section_text">
+    <div>
+      <h1 class="logo_text">Personalised Travelling</h1>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom_text">
+        Travel with your specific choices
+      </div>
+      <div class="bottom_bn">
+        <button onclick="bookTrip(true)">Book a Private Jet</button>
+        <button onclick="bookTrip(false)">Book a Regular Flight</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="section2_divider">
+    <hr />
+  </div>
+
+  <div id="section2">
+    <div class="section2_text">
+      <h2 class="section2_title">Travelling is becoming more and more popular. A personal approach makes you get the
+        best of your travelling experience.</h2>
+
+      <ul class="section2_grid">
+        <li class="grid_item">
+          <h3 class="grid_title">Flexible Schedule</h3>
+          <p class="grid_text">Choose any flight, fliht schedule, route, destination you like.</p>
+        </li>
+        <li class="grid_item">
+          <h3 class="grid_title">Special Discounts</h3>
+          <p class="grid_text">Always provide best sepcial discounts for your trip. And save your money.</p>
+        </li>
+        <li class="grid_item">
+          <h3 class="grid_title">Customization and personalizaton</h3>
+          <p class="grid_text">Our experienced experts provide one on one solutions for your trip to maximize your
+            satisfaction for specific requirements.</p>
+        </li>
+        <li class="grid_item">
+          <h3 class="grid_title">Personalized Service</h3>
+          <p class="grid_text">We have more than ten years of service experience in this field. We are proud of our
+            excellent service quality.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div id="section3">
+    <div id="section3_left" class="flex_item">
+      <h2>Professional Services</h2>
+      <div>
+        <p>Provide one on one solutions to meet your specific requirements</p>
+        <a>All Solutions</a>
+      </div>
+    </div>
+    <a id="section3_middle" class="flex_item section3_middle_right">
+      <h3>Personalizaton</h3>
+      <p>Book your flights, hotels, ... Customize your trip.</p>
+    </a>
+    <a id="section3_right" class="flex_item section3_middle_right">
+      <h3>Special Discount</h3>
+      <p>Save your money with great discounts</p>
+    </a>
+  </div>
+
+  <div id="popular_section">
+    <h2>Fascinating Destinations</h2>
+    <div class="section">
+      <div class="images">
+        <img src="/images/demo3/santorini_1600.jpg" alt="santorini" style="display: inline-block;" id="santorini_img"
+          class="destination_img" loading="lazy" />
+        <img src="/images/demo3/cinque_terre_1600.jpg" alt="cinque terre" style="display: none;" id="cinque_terre_img"
+          class="destination_img" loading="lazy" />
+        <img src="/images/demo3/mont_saint_michel_1600.jpg" alt="mont-saint-michel" style="display: none;"
+          id="mont_saint_michel_img" class="destination_img" loading="lazy" />
+        <img src="/images/demo3/aurora_1600.jpg" alt="aurora" style="display: none;" id="aurora_img"
+          class="destination_img" loading="lazy" />
+      </div>
+      <div class="destinations">
+        <div class="place" id="santorini">
+          <h3>Santorini</h3>
+          <h4>Greece</h4>
+        </div>
+        <div class="place" id="mont_saint_michel">
+          <h3>Mont-Saint-Michel</h3>
+          <h4>France</h4>
+        </div>
+        <div class="place" id="cinque_terre">
+          <h3>Cinque Terre</h3>
+          <h4>Italy</h4>
+        </div>
+        <div class="place" id="aurora">
+          <h3>Northern Lights</h3>
+          <h4>Iceland</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="dark_section">
+    <div id="dark_left">
+      <img src="/images/demo3/mac_1280.jpg" loading="lazy" alt="Itinerary Manager" />
+    </div>
+    <div id="dark_right">
+      <h2>Itinerary Manager</h2>
+      <p>Eum cu sonet iriure perfecto, vim soluta insolens te. Cum sumo lucilius ei, in brute euismod sed, ut usu stet graeco. Nec etiam appareat at, sea aliquando percipitur
+        assueverit at. At utroque complectitur nec, et usu quem ocurreret accusamus. Falli dicit accusam an his, vis nihil oblique complectitur et, vis ne quod cibo apeirian.
+      <br/><br/>
+      Cum sumo lucilius ei, in brute euismod sed, ut usu stet graeco. Nec etiam appareat at, sea aliquando percipitur
+        assueverit at. At utroque complectitur nec, et usu quem ocurreret accusamus. Eum cu sonet iriure perfecto, vim
+        soluta insolens te. Falli dicit accusam an his, vis nihil oblique complectitur et, vis ne quod cibo apeirian.
+      </p>
+    </div>
+  </div>
+
+  <div id="experience_section">
+    <div>
+      <h1>Traveller Experience</h1>
+    </div>
+    <div class="text_section">
+      <div class="experience_left">
+        <p>Ne quodsi <strong>blandit suscipiantur mel</strong>, quem nihil accusam ex sea, <strong>ad eam dicant
+            concludaturque</strong>. Omnesque corrumpit eu usu. Mei an placerat luptatum oportere, quot deserunt nam eu,
+          <strong>sed autem utamur te</strong>. Ignota numquam vel cu, prima simul conclusionemque cu nec.
+        </p>
+        
+        <p>Postea reformidans te vis, id has oportere voluptatibus. Sed vero facer soluta cu. Ei sea stet mutat utinam.
+          Eu pro illud mazim. Dicam fabellas at vis. Nisl affert postulant eu vis, ne vidit inimicus eum.</p>
+      </div>
+      <div class="experience_right">
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/discount.svg" alt="Greate Discount" />
+          </div>
+          <h3>Greate Discount</h3>
+          <p>Vix malis veritus in, vis te liber soleat assentior, an pri percipit nominati. Aliquam graecis electram vix
+            in. Vis munere vituperata cu, ea pri veri dicit tibique.</p>
+        </div>
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/group.svg" alt="Personalized Service" />
+          </div>
+          <h3>Personalized Service</h3>
+          <p>Ut aperiam fabulas gloriatur quo, eos id salutatus sadipscing, quando eligendi patrioque vix ne. Ad nam
+            aeterno concludaturque, at nam omnium alterum</p>
+        </div>
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/professional.svg" alt="Experienced Professionals" />
+          </div>
+          <h3>Experienced Professionals</h3>
+          <p>Eum delenit nonumes conclusionemque no, mei simul nihil facilisi ad. Eligendi repudiare no duo. Qui ad
+            persius tacimates, cu mel everti explicari, assentior eloquentiam vix in.</p>
+        </div>
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/card.svg" alt="Rewarding Membership" />
+          </div>
+          <h3>Rewarding Membership</h3>
+          <p>Duo an vero putant, sit animal salutandi at, delicata reformidans nam ut. Simul fabellas ea pri, mazim
+            sanctus no pro. Mei suscipiantur definitionem et.</p>
+        </div>
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/route.svg" alt="Customized Routes" />
+          </div>
+          <h3>Customized Routes</h3>
+          <p>Natum platonem gubergren no vis. Minim aliquid inimicus ad mei, at soluta bonorum explicari vim.</p>
+        </div>
+        <div class="experience_item">
+          <div class="icon">
+            <img src="/images/demo3/schedule.svg" alt="Flexible Schedules" />
+          </div>
+          <h3>Flexible Schedules</h3>
+          <p>Praesent omittantur nec ea. Ne pri amet phaedrum, vel in mundi evertitur percipitur, eu quis placerat vix.
+            No ius populo meliore minimum, vidisse aliquid propriae id est.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slide_section">
+    <div class="slide_images">
+      <img src="/images/demo3/santorini_1600.jpg" style="opacity: 1;" class="slide_img">
+      <img src="/images/demo3/cinque_terre_1600.jpg" style="opacity: 0;" class="slide_img">
+      <img src="/images/demo3/aurora_1600.jpg" style="opacity: 0;" class="slide_img">
+      <img src="/images/demo3/mont_saint_michel_1600.jpg" style="opacity: 0;" class="slide_img">
+    </div>
+    <div class="button_area">
+      <img class="left_arrow" src="/images/demo3/arrow.svg" />
+      <img class="right_arrow" src="/images/demo3/arrow.svg" />
+      <span class="slide_num"></span>
+    </div>
+  </div>
+
+  <div id="book_section">
+    <h3>What are you waiting for?</h3>
+    <div class="text_area" onclick="bookTrip(true)">
+      <h1>Book a Trip</h1>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <h2>Traveller</h2>
+    <div class="footer_middle">
+      <div class="footer_middle_left">
+        <h3>Connect with us</h3>
+
+        <div class="footer_icon_row">
+          <div class="footer_icon">
+            <a><img src="/images/demo3/facebook.svg" alt="facebook" /></a>
+          </div>
+          <div class="footer_icon">
+            <a><img src="/images/demo3/instagram.svg" alt="instagram" /></a>
+          </div>
+          <div class="footer_icon">
+            <a><img src="/images/demo3/linkedIn.svg" alt="linkedIn" /></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="footer_middle_right">
+        <ul class="footer_middle_right_ul">
+          <li class="nav_item_group">
+            <h3>Book a Trip</h3>
+            <ul>
+              <li class="nav_item">
+                <a>European Countries</a>
+              </li>
+              <li class="nav_item">
+                <a>Asian Countries</a>
+              </li>
+              <li class="nav_item">
+                <a>America Countries</a>
+              </li>
+              <li class="nav_item">
+                <a>Others</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav_item_group">
+            <h3>Popular Destinations</h3>
+            <ul>
+              <li class="nav_item">
+                <a>Santorini, Greece</a>
+              </li>
+              <li class="nav_item">
+                <a>Cinque Terre, Italy</a>
+              </li>
+              <li class="nav_item">
+                <a>Mont-Saint-Michel, France</a>
+              </li>
+              <li class="nav_item">
+                <a>Others</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav_item_group">
+            <h3>Get Discounts</h3>
+            <ul>
+              <li class="nav_item">
+                <a>Flight Tickets</a>
+              </li>
+              <li class="nav_item">
+                <a>Train Tickets</a>
+              </li>
+              <li class="nav_item">
+                <a>Bus Tickets</a>
+              </li>
+              <li class="nav_item">
+                <a>Others</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav_item_group">
+            <h3>Membership</h3>
+            <ul>
+              <li class="nav_item">
+                <a>VIP</a>
+              </li>
+              <li class="nav_item">
+                <a>Registered Members</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav_item_group">
+            <h3>Hotel Bookings</h3>
+            <ul>
+              <li class="nav_item">
+                <a>5 Star Hotels</a>
+              </li>
+              <li class="nav_item">
+                <a>4 Star Hotels</a>
+              </li>
+              <li class="nav_item">
+                <a>3 Star Hotels</a>
+              </li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer_bottom">
+      <div class="footer_bottom_left">
+        <h3 class="footer_bottom_top" id="footer_logo">Traveller</3>
+      </div>
+      <div class="footer_bottom_right">
+        <div class="footer_bottom_top">
+          <a>Cookie policy</a>
+          <a>Terms & Conditions</a>
+          <a>Privacy Policy</a>
+        </div>       
+      </div>
+    </div>
+      
+      <div class="footer_bottom_text">
+
+      <p class="text_left">Id nemore quodsi denique sed, tempor aliquid consequat cu sed. Legendos prodesset at vis. Omnium
+        interpretaris ius id, modus atomorum et quo. </p>
+
+        <p class="text_right">
+          Admodum copiosae efficiendi vel ei. Eum ut novum abhorreant. Eum dicant scaevola in, est quot laoreet veritus
+          ea. Eum an apeirian maiestatis, et assum quidam vis. Nam liber nonumy ei, ne fabellas vivendum mei. No veri
+          feugiat nostrum mel, percipit vulputate democritum cu duo.
+        </p>
+      </div>
+    
+  </footer>
+
+  <div class="book_trip_panel_wrap panel_wrap">
+    <div class="book_trip_panel">
+      <div class="booking_header">
+        <div class="booking_top">
+          <div class="header_bn">
+            <button data-active="true" id="private_jet_booking">Private Jet</button>
+            <button data-active="false" id="regular_flight_booking">Regular Flight</button>
+          </div>
+          <button class="close_bn">
+            X
+          </button>
+        </div>
+        <h3 id="booking_text">Book a private jet</h3>
+      </div>
+
+      <div class="text_content">
+        <div class="form_header">
+          <button id="one_way_bn" data-active="true">One Way</button>
+          <button id="round_trip_bn" data-active="false">Round Trip</button>
+        </div>
+        <div class="booking_form">
+          <form id="booking_form_id">
+            <div class="input_container">
+              <div class="input_label">From*</div>
+              <div class="input_row">
+                <input placeholder="From where" class="booking_input" type="text" />
+                <img src="/images/demo3/location.svg" alt="location" />
+              </div>
+              <div class="booking_error">This field is required</div>
+            </div>
+
+
+            <div class="input_container">
+              <div class="input_label">To*</div>
+              <div class="input_row">
+                <input placeholder="To where" class="booking_input" type="text" />
+                <img src="/images/demo3/location.svg" alt="location" />
+              </div>
+              <div class="booking_error">This field is required</div>
+            </div>
+
+            <div class="input_container">
+              <div class="input_label">Passengers*</div>
+              <div class="input_row">
+                <input placeholder="Amount of passengers" class="booking_input" type="number" min="1" />
+                <img src="/images/demo3/group.svg" alt="group" />
+              </div>
+              <div class="booking_error">This field is required</div>
+            </div>
+
+            <button type="submit">
+              Proceed
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="menu_panel_wrap panel_wrap">
+    <div class="menu_panel">
+      <div class="menu_top">
+        <div class="menu_left_bns">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+        <button class="close_bn menu_close_bn">X</button>
+      </div>
+
+      <div class="menu_content">
+        <div class="link_container">
+          <ul class="footer_middle_right_ul">
+            <li class="nav_item_group">
+              <h3>Book a Trip</h3>
+              <ul>
+                <li class="nav_item">
+                  <a>European Countries</a>
+                </li>
+                <li class="nav_item">
+                  <a>Asian Countries</a>
+                </li>
+                <li class="nav_item">
+                  <a>America Countries</a>
+                </li>
+                <li class="nav_item">
+                  <a>Others</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav_item_group">
+              <h3>Popular Destinations</h3>
+              <ul>
+                <li class="nav_item">
+                  <a>Santorini, Greece</a>
+                </li>
+                <li class="nav_item">
+                  <a>Cinque Terre, Italy</a>
+                </li>
+                <li class="nav_item">
+                  <a>Mont-Saint-Michel, France</a>
+                </li>
+                <li class="nav_item">
+                  <a>Others</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav_item_group">
+              <h3>Get Discounts</h3>
+              <ul>
+                <li class="nav_item">
+                  <a>Flight Tickets</a>
+                </li>
+                <li class="nav_item">
+                  <a>Train Tickets</a>
+                </li>
+                <li class="nav_item">
+                  <a>Bus Tickets</a>
+                </li>
+                <li class="nav_item">
+                  <a>Others</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav_item_group">
+              <h3>Membership</h3>
+              <ul>
+                <li class="nav_item">
+                  <a>VIP</a>
+                </li>
+                <li class="nav_item">
+                  <a>Registered Members</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav_item_group">
+              <h3>Hotel Bookings</h3>
+              <ul>
+                <li class="nav_item">
+                  <a>5 Star Hotels</a>
+                </li>
+                <li class="nav_item">
+                  <a>4 Star Hotels</a>
+                </li>
+                <li class="nav_item">
+                  <a>3 Star Hotels</a>
+                </li>
+              </ul>
+            </li>
+  
+  
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <script src="/js/demo3.js"></script>
+</body>
+
+</html>
